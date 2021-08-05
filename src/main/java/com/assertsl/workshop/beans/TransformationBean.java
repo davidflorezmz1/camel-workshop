@@ -10,6 +10,7 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeBodyPart;
 import java.io.IOException;
 import java.io.InputStream;
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,7 +26,15 @@ public class TransformationBean {
 
     public Map updateDrugParameters(DrugDto drugDto) {
         Map<String, Object> updateParameters = new HashMap<String, Object>();
-        //TODO: set parameters from dto and update the entity
+        
+        //TODO: (OK) set parameters from dto and update the entity
+        BigDecimal price = drugDto.getPrice();
+        int existences = drugDto.getExistences();
+        String ndc = drugDto.getProductNdc();
+        updateParameters.put("productNdc", ndc);
+        updateParameters.put("price", price);
+        updateParameters.put("existences", existences);        
+        
         return updateParameters;
     }
 
