@@ -125,6 +125,19 @@
     </dependency>
 
 
+	 <!--   MYSQL -->
+    <dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<scope>runtime</scope>
+	</dependency>
+	
+	<!--   Hibernate -->
+	<dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.5.6</version>
+    </dependency>
 
     <!-- Test -->
     <dependency>
@@ -143,22 +156,7 @@
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
-    
-    
-    <!--   MYSQL -->
-    <dependency>
-		<groupId>mysql</groupId>
-		<artifactId>mysql-connector-java</artifactId>
-		<scope>runtime</scope>
-	</dependency>
-	
-	<!--   Hibernate -->
-	<dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-core</artifactId>
-      <version>5.5.6</version>
-    </dependency>
-    
+       
   </dependencies>
 
   <build>
