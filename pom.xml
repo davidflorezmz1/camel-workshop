@@ -123,7 +123,13 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
-
+    
+    <!--  mariadb -->
+	<dependency>
+	    <groupId>org.mariadb.jdbc</groupId>
+	    <artifactId>mariadb-java-client</artifactId>
+	    <version>2.1.2</version>
+	</dependency>
 
 	 <!--   MYSQL -->
     <dependency>
